@@ -864,6 +864,9 @@ header .menu__user ul li:hover a {
   margin: auto;
 }
 .product__last .img__last img {
+  min-width: 200px;
+  max-height: 195px;
+  min-height: 195px;
   max-width: 229px;
 }
 .product__last .text__last {
@@ -944,7 +947,10 @@ header .menu__user ul li:hover a {
   height: 195px;
 }
 .product__item .item__img img {
+  max-height: 195px;
+  min-height: 195px;
   max-width: 229px;
+  min-width: 200px;
 }
 .product__item .item__info {
   text-align: center;
@@ -1021,7 +1027,9 @@ header .menu__user ul li:hover a {
   flex: 0 0 50%;
   max-width: 50%;
 }
-.product__detail .product__detail__img img {
+.product__detail .product__detail__img > img {
+  max-height: 296px;
+  width: 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -1242,6 +1250,7 @@ header .menu__user ul li:hover a {
 }
 .slider .slider__item .slider__content {
   position: relative;
+  height: 100%;
   overflow: hidden;
 }
 .slider .slider__item .slider__content .slider__button {
@@ -1662,58 +1671,6 @@ header .menu__user ul li:hover a {
   width: 100%;
   display: flex;
   padding-bottom: 40px;
-}
-.hot .product__item:nth-child(1) {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-@media (max-width: 768px) {
-  .hot .product__item:nth-child(1) {
-    display: none;
-  }
-}
-.hot .product__item:nth-child(2) {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-@media (max-width: 768px) {
-  .hot .product__item:nth-child(2) {
-    display: none;
-  }
-}
-.hot .product__item:nth-child(3) {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-@media (max-width: 768px) {
-  .hot .product__item:nth-child(3) {
-    display: none;
-  }
-}
-.hot .product__item:nth-child(3) .item__img {
-  height: auto;
-}
-.hot .product__item:nth-child(3) .item__img img {
-  height: 400px;
-}
-.hot .product__item:nth-child(4) {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-@media (max-width: 768px) {
-  .hot .product__item:nth-child(4) {
-    display: none;
-  }
-}
-.hot .product__item:nth-child(5) {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-@media (max-width: 768px) {
-  .hot .product__item:nth-child(5) {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
 }
 
 .banner__second .container {
@@ -2179,8 +2136,11 @@ footer .bonus__foot .bonus__text ul li a {
   flex-wrap: wrap;
 }
 .left__item ul .list__img .img__link {
-  flex: 0 0 40%;
-  max-width: 40%;
+  max-height: 80px;
+  min-height: 80px;
+  min-width: 80px;
+  flex: 0 0 80px;
+  max-width: 80px;
 }
 .left__item ul .list__img .img__info {
   flex: 0 0 60%;

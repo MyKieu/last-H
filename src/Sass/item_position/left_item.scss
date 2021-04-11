@@ -5,7 +5,7 @@
     @extend %pb-2;
     list-style: none;
     li {
-      @include border(1px,$color_border);
+      @include border(1px, $color_border);
 
       padding: 20px;
       a {
@@ -50,7 +50,10 @@
     .list__img {
       @include display_flex();
       .img__link {
-        @include flex(40%);
+        max-height: 80px;
+        min-height: 80px;
+        min-width: 80px;
+        @include flex(80px);
       }
       .img__info {
         @include flex(60%);
@@ -64,7 +67,7 @@
     }
     &.-blog {
       li {
-          padding-left: 0px;
+        padding-left: 0px;
       }
       &.-nboder {
         li {
@@ -76,14 +79,14 @@
       li {
         &:hover {
           background-color: white;
-        a {
-          color: $color_or;
+          a {
+            color: $color_or;
+          }
         }
-      }
         border: none;
-        @include border-bottom(1px,$color_border);
+        @include border-bottom(1px, $color_border);
         &:first-child {
-          @include border-bottom(1px,$color_or);
+          @include border-bottom(1px, $color_or);
           @include display_flex();
           a {
             color: black;
@@ -91,7 +94,6 @@
               color: $color_or;
             }
           }
-
         }
         &.-list__blog__img {
           display: inline-block;
@@ -105,7 +107,7 @@
         }
         &.-list__blog__tag {
           display: inline-block;
-          @include border(0.5px,$color_border);
+          @include border(0.5px, $color_border);
 
           padding: 7px;
           margin: 5px 5px 5px 0px;
