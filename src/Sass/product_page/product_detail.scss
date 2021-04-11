@@ -4,7 +4,9 @@
   margin-top: 30px;
   .product__detail__img {
     @include flex(50%);
-    img {
+    & > img {
+      max-height: 296px;
+      width: 100%;
       @include flex(100%);
     }
     .product__detail__bonus {
@@ -40,7 +42,7 @@
       padding: 10px 0;
       color: red;
       font-size: $font_price;
-      @include border-bottom(1px,$color_banner_2);
+      @include border-bottom(1px, $color_banner_2);
     }
     h5 {
       padding: 5px 0;
@@ -50,12 +52,12 @@
       font-size: $font_tiny;
       color: $color_list;
       padding-bottom: 10px;
-      @include border-bottom(1px,$color_banner_2);
+      @include border-bottom(1px, $color_banner_2);
     }
     .info__dropdown {
       @include display_flex();
       @extend %p-col-1;
-      @include border-bottom(1px,$color_banner_2);
+      @include border-bottom(1px, $color_banner_2);
       .dropdown__item {
         @include flex(50%);
         position: relative;
@@ -125,7 +127,6 @@
       .product__detail__info {
         @include flex(100%);
         padding-bottom: 1rem;
-
       }
     }
   }
@@ -138,13 +139,13 @@
     a {
       font-size: 14px;
       @extend %p-1;
-      @include border(1px,$color_list);
+      @include border(1px, $color_list);
       color: $color_black;
       &.-active {
         background-color: black;
         color: $color_or;
         &:hover {
-          @include border(1px,$color_list);
+          @include border(1px, $color_list);
           color: $color_black;
           background-color: white;
         }
@@ -160,7 +161,7 @@
     color: $color_list;
     font-size: $font_13;
     margin: 14px 0;
-    @include border(1px,$color_list);
+    @include border(1px, $color_list);
   }
 }
 
